@@ -1504,7 +1504,7 @@ pub mod match_v5 {
         pub blast_cone_opposite_opponent_count: Option<i32>,
         #[serde(rename = "bountyGold")]
         #[serde(skip_serializing_if = "Option::is_none")]
-        pub bounty_gold: Option<i32>,
+        pub bounty_gold: Option<f32>,
         #[serde(rename = "buffsStolen")]
         #[serde(skip_serializing_if = "Option::is_none")]
         pub buffs_stolen: Option<i32>,
@@ -2092,7 +2092,7 @@ pub mod match_v5 {
         pub assisting_participant_ids: Option<std::vec::Vec<i32>>,
         #[serde(rename = "bounty")]
         #[serde(skip_serializing_if = "Option::is_none")]
-        pub bounty: Option<i32>,
+        pub bounty: Option<f32>,
         #[serde(rename = "killStreakLength")]
         #[serde(skip_serializing_if = "Option::is_none")]
         pub kill_streak_length: Option<i32>,
